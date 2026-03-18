@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
-const CLICKUP_TOKEN = process.env.CLICKUP_TOKEN;
+const CLICKUP_TOKEN = process.env.CLICKUP_API_KEY;
 const CLICKUP_LIST_ID = process.env.CLICKUP_LIST_ID;
 
 app.get('/', (req, res) => {
